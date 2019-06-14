@@ -1,0 +1,11 @@
+<form >
+        <label>Enter your first number</label>
+        <input type="number" name="first" [(ngModel)]=first />
+        <br/>
+        <label>Enter your second number</label>
+        <input type="number" name="second" [(ngModel)]=second/>
+        <br/>
+        <button (click)="add()">ADD</button>   
+        <button (click)="sub()">SUB</button>  
+    </form>
+    <h1 *ngIf="result">RESULT IS:{{result}}</h1>
